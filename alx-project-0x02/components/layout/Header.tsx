@@ -1,8 +1,13 @@
+import Home from '@/pages/home'
+import About from '@/pages/about'
 import React from 'react'
 
 const Header = () => {
     return (
-        <div>Header</div>
+        <div>
+            <Home />
+            <About />
+        </div>
     )
 }
 
