@@ -1,14 +1,19 @@
-import Home from '@/pages/home'
-import About from '@/pages/about'
-import React from 'react'
+import Link from 'next/link';
 
 const Header = () => {
     return (
-        <div>
-            <Home />
-            <About />
-        </div>
-    )
-}
+        <header className="bg-gray-800 text-white p-4">
+            <nav className="flex space-x-4">
+                <Link href="/home" className="hover:underline">
+                    Home
+                </Link>
 
-export default Header
+                <Link href="/about" className="hover:underline">
+                    About
+                </Link>
+            </nav>
+        </header>
+    );
+};
+
+export default Header;
